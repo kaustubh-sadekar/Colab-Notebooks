@@ -56,6 +56,7 @@ import torch.optim as optim
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(),lr=0.01,momentum=0.9)
 
+# Path for the model
 PATH = './cifar_net.pth'
 net = Net2()
 net.load_state_dict(torch.load(PATH))
